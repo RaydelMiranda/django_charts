@@ -36,8 +36,6 @@ class Chart(models.Model):
     )
 
     class Meta:
-        verbose_name = "SPLine Chart"
-        verbose_name_plural = "SPLine Charts"
         abstract = True
 
     def __unicode__(self):
@@ -83,3 +81,13 @@ class SPLineChart(Chart):
 
     y_data_format = models.TextField(_("Y axis data format"), max_length=16, null=True, blank=True)
     x_data_format = models.TextField(_("X axis data format"), max_length=16, null=True, blank=True)
+
+    class Meta:
+        verbose_name = "SPLine Chart"
+        verbose_name_plural = "SPLine Charts"
+
+class PieChart(Chart):
+
+    class Meta:
+        verbose_name = "Pie Chart"
+        verbose_name_plural = "Pie Charts"
