@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Djando Charts",
+    name="Django Charts",
     version="0.0.1",
     author="Raydel Miranda",
     author_email="raydel.miranda.gomez@gmail.com",
