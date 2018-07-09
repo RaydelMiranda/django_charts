@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="CanvasJS Django Charts",
-    version="0.1a",
+    version="0.1a-r1",
     author="Raydel Miranda",
     author_email="raydel.miranda.gomez@gmail.com",
     description="App for charts generation for django apps.",

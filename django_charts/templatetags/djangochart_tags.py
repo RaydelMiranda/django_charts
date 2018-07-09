@@ -6,7 +6,7 @@ register = Library()
 
 from django_charts import models
 
-@register.inclusion_tag('charts/js/spline.js.html')
+@register.inclusion_tag('django_charts/charts/js/spline.js.html')
 def add_spline_chart_js(chart_code):
     chart = models.SPLineChart.objects.get(code=chart_code)
 
@@ -31,12 +31,12 @@ def add_spline_chart_js(chart_code):
 
     return data
 
-@register.inclusion_tag('charts/html/spline.html')
+@register.inclusion_tag('django_charts/charts/html/spline.html')
 def add_spline_chart_html(chart_code):
     data = {'code': chart_code}
     return data
 
-@register.inclusion_tag('charts/js/pie.js.html')
+@register.inclusion_tag('django_charts/charts/js/pie.js.html')
 def add_pie_chart_js(chart_code):
     chart = models.PieChart.objects.get(code=chart_code)
 
@@ -61,7 +61,7 @@ def add_pie_chart_js(chart_code):
 
     return data
 
-@register.inclusion_tag('charts/html/pie.html')
+@register.inclusion_tag('django_charts/charts/html/pie.html')
 def add_pie_chart_html(chart_code):
     data = {'code': chart_code}
     return data
