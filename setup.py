@@ -13,6 +13,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://bitbucket.org/elasbit/fc-cloudtrails-sdk-py/src/develop/",
+    include_package_data=True,
     packages=[
         'django_charts',
         'django_charts.migrations',
